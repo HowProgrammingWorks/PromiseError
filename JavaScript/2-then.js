@@ -15,8 +15,17 @@ sum(7, 'A')
     },
     err => {
       console.log({ messageThen: err.message });
+      throw new Error('Oh, no!');
     }
   )
   .catch(err => {
-    console.log({ messageCatch: err.message });
+    console.log({ messageCatch1: err.message });
+    throw new Error('Oh, noo!');
+  })
+  .then(() => {}, err => {
+    console.log({ messageThen2: err.message });
+    throw new Error('Oh, nooo!');
+  })
+  .catch(err => {
+    console.log({ messageCatch2: err.message });
   });
