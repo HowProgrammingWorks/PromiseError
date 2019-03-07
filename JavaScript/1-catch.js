@@ -10,8 +10,8 @@ const sum = (a, b) => new Promise((resolve, reject) => {
 
 sum(7, 'A')
   .then(data => {
-    console.log(data);
+    console.log({ data });
   })
   .catch(err => {
-    console.log(err.message);
+    console.log({ message: err.message });
   });

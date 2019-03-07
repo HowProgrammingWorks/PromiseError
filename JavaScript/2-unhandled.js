@@ -10,7 +10,7 @@ const sum = (a, b) => new Promise((resolve, reject) => {
 
 sum(7, 'A')
   .then(data => {
-    console.log(data);
+    console.log({ data });
   });
 
 // UnhandledPromiseRejectionWarning: Error: a and b should be numbers
