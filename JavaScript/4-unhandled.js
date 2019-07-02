@@ -13,4 +13,8 @@ sum(7, 'A')
     console.log({ data });
   });
 
+setTimeout(() => {
+  console.log('after all');
+}, 1000);
+
 // UnhandledPromiseRejectionWarning: Error: a and b should be numbers

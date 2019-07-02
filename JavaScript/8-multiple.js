@@ -3,7 +3,6 @@
 const sum = (a, b) => new Promise((resolve, reject) => {
   if (typeof a === 'number' && typeof b === 'number') {
     resolve(a + b);
-    resolve(a + b);
   } else {
     reject(new Error('a and b should be numbers'));
   }

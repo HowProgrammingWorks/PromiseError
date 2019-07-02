@@ -21,9 +21,9 @@ const p1 = sum(7, 'A')
     console.log(data);
   });
 
-//p1.catch(err => {
-//  console.log({ catch1: err });
-//});
+p1.catch(err => {
+  console.log({ catch1: err });
+});
 
 setTimeout(() => {
   p1.catch(err => {
