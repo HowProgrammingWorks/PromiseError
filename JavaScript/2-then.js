@@ -10,22 +10,22 @@ const sum = (a, b) => new Promise((resolve, reject) => {
 
 sum(7, 'A')
   .then(
-    data => {
+    (data) => {
       console.log({ data });
     },
-    err => {
+    (err) => {
       console.log({ messageThen: err.message });
       throw new Error('Oh, no!');
     }
   )
-  .catch(err => {
+  .catch((err) => {
     console.log({ messageCatch1: err.message });
     throw new Error('Oh, noo!');
   })
-  .then(() => {}, err => {
+  .then(() => {}, (err) => {
     console.log({ messageThen2: err.message });
     throw new Error('Oh, nooo!');
   })
-  .catch(err => {
+  .catch((err) => {
     console.log({ messageCatch2: err.message });
   });

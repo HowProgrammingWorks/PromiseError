@@ -9,9 +9,9 @@ const sum = (a, b) => new Promise((resolve, reject) => {
 });
 
 sum(7, 'A')
-  .then(data => {
+  .then((data) => {
     console.log({ data });
   })
-  .catch(err => {
+  .catch((err) => {
     console.log({ message: err.message });
   });

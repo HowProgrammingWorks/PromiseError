@@ -9,7 +9,7 @@ const sum = (a, b) => new Promise((resolve, reject) => {
 });
 
 sum(7, 'A')
-  .then(data => {
+  .then((data) => {
     console.log({ data });
   });
 

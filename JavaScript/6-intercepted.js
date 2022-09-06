@@ -13,6 +13,6 @@ process.on('unhandledRejection', (reason, promise) => {
 });
 
 sum(7, 'A')
-  .then(data => {
+  .then((data) => {
     console.log({ data });
   });

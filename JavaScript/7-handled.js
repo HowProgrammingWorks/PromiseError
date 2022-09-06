@@ -12,21 +12,21 @@ process.on('unhandledRejection', (reason, promise) => {
   console.log({ unhandledRejection: { reason, promise } });
 });
 
-process.on('rejectionHandled', promise => {
+process.on('rejectionHandled', (promise) => {
   console.log({ rejectionHandled: { promise } });
 });
 
 const p1 = sum(7, 'A')
-  .then(data => {
+  .then((data) => {
     console.log(data);
   });
 
-p1.catch(err => {
+p1.catch((err) => {
   console.log({ catch1: err });
 });
 
 setTimeout(() => {
-  p1.catch(err => {
+  p1.catch((err) => {
     console.log({ catch2: err });
   });
 }, 0);

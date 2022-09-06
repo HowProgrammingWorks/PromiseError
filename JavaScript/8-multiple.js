@@ -13,6 +13,6 @@ process.on('multipleResolves', (type, promise, reason) => {
 });
 
 sum(7, 3)
-  .then(res1 => {
+  .then((res1) => {
     console.log({ res1 });
   });

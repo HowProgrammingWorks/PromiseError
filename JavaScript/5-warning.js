@@ -8,11 +8,11 @@ const sum = (a, b) => new Promise((resolve, reject) => {
   }
 });
 
-process.on('warning', warning => {
+process.on('warning', (warning) => {
   console.log({ warning });
 });
 
 sum(7, 'A')
-  .then(data => {
+  .then((data) => {
     console.log(data);
   });
