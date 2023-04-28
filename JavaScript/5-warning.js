@@ -16,3 +16,5 @@ sum(7, 'A')
   .then((data) => {
     console.log(data);
   });
+
+// Throws: Error: a and b should be numbers

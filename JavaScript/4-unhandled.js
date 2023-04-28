@@ -17,4 +17,4 @@ setTimeout(() => {
   console.log('after all');
 }, 1000);
 
-// UnhandledPromiseRejectionWarning: Error: a and b should be numbers
+// Throws: Error: a and b should be numbers
